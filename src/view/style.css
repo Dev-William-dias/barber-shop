@@ -1,0 +1,4 @@
+.background-pane {
+    -fx-background-color: rgba(000,000,000,0.5);
+    -fx-background-radius: 10px;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="controller.MenuController">
+   <children>
+      <Pane layoutX="15.0" layoutY="14.0" prefHeight="350.0" prefWidth="460.0" styleClass="background-pane">
+         <children>
+            <TextField fx:id="txtCustomer" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="429.0" promptText="Cliente">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cbServices" layoutX="14.0" layoutY="62.0" prefHeight="32.0" prefWidth="429.0" promptText="Serviços" />
+            <DatePicker fx:id="dataPickerData" layoutX="14.0" layoutY="106.0" prefHeight="32.0" prefWidth="195.0" promptText="Data" />
+            <TextField fx:id="txtTime" layoutX="248.0" layoutY="106.0" prefHeight="32.0" prefWidth="195.0" promptText="Hora 00:00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="txtaNote" layoutX="14.0" layoutY="150.0" prefHeight="135.0" prefWidth="429.0" promptText="Observação">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Button layoutX="29.0" layoutY="296.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" text="Agendar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableAgenda" layoutX="15.0" layoutY="382.0" prefHeight="230.0" prefWidth="970.0">
+         <columns>
+            <TableColumn fx:id="columnId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="columnCustomer" prefWidth="360.0" text="Cliente" />
+            <TableColumn fx:id="columnData" prefWidth="120.0" text="Data" />
+            <TableColumn fx:id="columnTime" prefWidth="120.0" text="Hora" />
+            <TableColumn prefWidth="95.0" />
+            <TableColumn prefWidth="95.0" />
+            <TableColumn prefWidth="95.0" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
