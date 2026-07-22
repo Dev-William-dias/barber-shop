@@ -2,3 +2,11 @@
     -fx-background-color: rgba(000,000,000,0.5);
     -fx-background-radius: 10px;
 }
+
+.btn-save {
+    -fx-background-color: #006400;
+}
+
+.btn-remove {
+    -fx-background-color: #DC143C;
+}
